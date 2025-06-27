@@ -25,7 +25,7 @@ const Card = () => {
     const getRandomImage = () => {
         return imageUrls[Math.floor(Math.random() * imageUrls.length)];
     };
- 
+    
 
     useEffect(() => {
         const fetchPosts = async () => {
