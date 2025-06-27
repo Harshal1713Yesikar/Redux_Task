@@ -25,7 +25,7 @@ const Card = () => {
     const getRandomImage = () => {
         return imageUrls[Math.floor(Math.random() * imageUrls.length)];
     };
-
+ 
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -41,7 +41,7 @@ const Card = () => {
         setTimeout(() => {
             fetchPosts();
             setLoading(false);
-        }, 1000);
+        }, 4000);
     }, [dispatch]);
 
     const startIndex = (currentPage - 1) * postsPerPage;
